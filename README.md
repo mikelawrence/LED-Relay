@@ -8,6 +8,9 @@ There are 4 inputs to the LED Relay board:
 The current software turns both outputs on when both ACC1 and ACC2 are at +12V but this can easily be changed to two independent outputs each controlled by its own ACC input. When either ACC1 off the micro-controller enters a low power state waiting for ACC1 to go back to +12V. Note with my current setup ACC2 can never go to +12V without ACC1 also going to +12V.
 
 ## Status and Testing
+* Rev 2.1 PCB.
+  * Added R12 and R13.
+  * Moved ACC connections on micro-controller.
 * Rev 2.0 PCB.
   * Converted older design to KiCad.
   * Switched from low-side switch to dual high-side switch.
