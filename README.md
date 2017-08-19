@@ -8,7 +8,11 @@ There are 4 inputs to the LED Relay board:
 The current software turns both outputs on when both ACC1 and ACC2 are at +12V but this can easily be changed to two independent outputs each controlled by its own ACC input. When either ACC1 off the micro-controller enters a low power state waiting for ACC1 to go back to +12V. Note with my current setup ACC2 can never go to +12V without ACC1 also going to +12V.
 
 ## Status and Testing
-* Rev 2.1 PCB.
+* Rev 2.2 PCB is still in progress.
+  * Connected ACC1 connection to PD2 on micro-controller. Only PIN2 has full asynchronous edge detection for ACC1.
+  * You can order parts from Mouser using this [shared BOM](http://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=7477630473). Note LT3014 is not available at Mouser you must get it somewhere else like Digikey.
+  * You can order the PCB from OSH Park using this [link](https://oshpark.com/shared_projects/Q2hSPIYz) to OSH Park.
+* Rev 2.1 PCB has been ordered from OSH Park, assembled, and testing is in progress.
   * Added R12 and R13.
   * Moved ACC connections on micro-controller.
 * Rev 2.0 PCB.
