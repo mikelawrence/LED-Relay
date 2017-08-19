@@ -1,7 +1,13 @@
 
 *.~vsd
 
+code/LED Relay 2/Debug
+code/.vs
 
 Datasheets/pdi_header.png
 
 LED Relay-BOM-export.csv
+
+fp-lib-table
+
+*.kicad_pcb-bak
