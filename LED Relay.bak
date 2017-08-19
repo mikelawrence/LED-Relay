@@ -28,7 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:LED Relay-cache
+LIBS:LED Relay Rev 2.1-cache
 EELAYER 25 0
 EELAYER END
 $Descr A 11000 8500
@@ -36,11 +36,11 @@ encoding utf-8
 Sheet 1 1
 Title "LED Relay PCB"
 Date "August 2017"
-Rev "2.2"
+Rev "2.1"
 Comp "Mike Lawrence"
 Comment1 "Rev 2.0 - Conversion to KiCad and complete revamp."
 Comment2 "Rev 2.1 - Added R12 & R13, moved ACC connections on MCU."
-Comment3 "Rev 2.2 - Added ACC1 connection to PD2 on micro-controller"
+Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
@@ -1467,7 +1467,7 @@ Wire Wire Line
 Wire Wire Line
 	9050 5650 9050 5550
 Wire Wire Line
-	8650 5550 9350 5550
+	9050 5550 9350 5550
 Wire Wire Line
 	2450 4650 6000 4650
 Wire Wire Line
@@ -1490,5 +1490,4 @@ Wire Wire Line
 	2900 5100 2900 5050
 Wire Wire Line
 	2900 4300 2900 4250
-Connection ~ 9050 5550
 $EndSCHEMATC
