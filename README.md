@@ -9,7 +9,7 @@ The current software turns both outputs on when both ACC1 and ACC2 are at +12V b
 
 ## Status and Testing
 * Rev 2.2 PCB is still in progress.
-  * Connected ACC1 connection to PD2 on micro-controller. Only PIN2 has full asynchronous edge detection for ACC1.
+  * Added ACC1 connection to PD2 on micro-controller. Only PIN2 has full asynchronous edge detection needed for ACC1.
   * You can order parts from Mouser using this [shared BOM](http://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=7477630473). Note LT3014 is not available at Mouser you must get it somewhere else like Digikey.
   * You can order the PCB from OSH Park using this [link](https://oshpark.com/shared_projects/Q2hSPIYz) to OSH Park.
 * Rev 2.1 PCB has been ordered from OSH Park, assembled, and testing is in progress.
@@ -36,3 +36,7 @@ The microcontroller is a Atmel/Microchip XMega8E5. Software is written in C usin
 When mounting on a motorcycle protection against the elements is crucial to longevity so the LED Relay board is thin enough to get 1" adhesive heat shrink on it. Once shrunk the board is well protected and the wires also get some strain relief.
 
 Note I used several different sizes of adhesive heat shrink to get a secure seal around the wires.
+
+## Final Result
+Here is the obligatory end result picture!
+<img src="meta/Trike LEDs.jpg" style="width:100%">
