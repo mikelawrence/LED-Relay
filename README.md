@@ -9,13 +9,14 @@ There are 4 inputs to the LED Relay board:
 The current software turns both outputs on when both ACC1 and ACC2 are at +12V but this can easily be changed to two independent outputs each controlled by its own ACC input. When either ACC1 off the micro-controller enters a low power state waiting for ACC1 to go back to +12V. Note with my current setup ACC2 can never go to +12V without ACC1 also going to +12V.
 
 ## Status and Testing
-* Rev 2.2 PCB is still in progress.
+* Rev 2.2 PCB has not been ordered or tested. Since there is only one simple change and my Rev 2.1 was modified to Rev 2.2 I feel confident Rev 2.2 is ready for use.
   * Added ACC1 connection to PD2 on micro-controller. Only PIN2 has full asynchronous edge detection needed for ACC1.
   * You can order parts from Mouser using this [shared BOM](http://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=7477630473). Note LT3014 is not available at Mouser you must get it somewhere else like Digikey.
   * You can order the PCB from OSH Park using this [link](https://oshpark.com/shared_projects/Q2hSPIYz) to OSH Park.
-* Rev 2.1 PCB has been ordered from OSH Park, assembled, and testing is in progress.
+* Rev 2.1 PCB has been ordered from OSH Park, assembled, and tested.
   * Added R12 and R13.
   * Moved ACC connections on micro-controller.
+  * Testing complete after modifying to Rev 2.2.
 * Rev 2.0 PCB.
   * Converted older design to KiCad.
   * Switched from low-side switch to dual high-side switch.
@@ -38,8 +39,8 @@ The microcontroller is a Atmel/Microchip XMega8E5. Software is written in C usin
 When mounting on a motorcycle protection against the elements is crucial to longevity so the LED Relay board is thin enough to get 1" adhesive heat shrink on it. Once shrunk the board is well protected and the wires also get some strain relief.
 
 Note I used several different sizes of adhesive heat shrink to get a watertight seal around the wires.
-<img src="meta/Heat Shrink 1.jpg" style="width:50%"><img src="meta/Heat Shrink 2.jpg" style="width:50%">
+<img src="meta/Heat Shrink 1.jpg" width="50%"><img src="meta/Heat Shrink 2.jpg" width="50%">
 
 ## Final Result
 Here is the obligatory end result picture!
-<img src="meta/Trike LEDs.jpg" style="width:100%">
+<img src="meta/Trike LEDs.jpg" width="100%">

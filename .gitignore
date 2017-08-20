@@ -11,3 +11,5 @@ LED Relay-BOM-export.csv
 fp-lib-table
 
 *.kicad_pcb-bak
+
+*.bak
