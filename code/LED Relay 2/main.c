@@ -10,6 +10,12 @@
  */ 
 
 /*
+ * Stay On sequence = ACC2 ON for less than 3 seconds, ACC2 OFF for less than 3 seconds, ACC1 ON.
+ *   Next Power OFF the relay will remain on for programmed timeout (default 30 minute).
+ *   This must be done for each power off cycle you want the Outputs to remain on.
+ */
+
+/*
  * Programming sequence (Only works within the first 60 seconds of ACC1 turning ON)
  * Flash sequence = ACC2 ON Pulse OFF each less than 3 seconds. The number of ACC2 pulses represents the 
  *   number of 10 minute increments to stay on after power off. The range is 1 to 25 increments or 10 - 250 minutes.

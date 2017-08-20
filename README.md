@@ -1,5 +1,6 @@
 # LED Relay Replacement PCB
-This board was designed to act as a relay for multi-color strip LED lighting on my wife's Harley Tri Glide. The Infineon BTS7008 Dual High-Side Switch provides up to 7.5A per channel. The software allows a quick on-off-on sequence that keeps the LEDs lit after the trike is turned off for a programmable delay time in minutes.
+This board was designed to act as a relay for multi-color strip LED lighting on my wife's Harley Tri Glide. The Infineon BTS7008 Dual High-Side Switch provides up to 7.5A per channel. The software allows a quick on-off-on sequence that keeps the LEDs lit after the trike is turned off for a programmable delay time in minutes. In addition to the Stay ON sequence the board also allows programming the amount of time to delay time. Set main.c for instructions on how to issue Stay ON sequence.
+
 There are 4 inputs to the LED Relay board:
 * +12V - This should be connected through a fuse to the battery and should remain hot even when the trike is off. All power to the outputs comes from this wire.
 * ACC1 - This is +12V when the bike is turned on (ignition).
@@ -26,6 +27,7 @@ The current software turns both outputs on when both ACC1 and ACC2 are at +12V b
 ## Notes
 * The current usage is only one channel with a typical 4A LED load and maximum of 6A. I have not done any load testing to see how well the board operates with both channels going full bore. The High-Side Switch will shutdown to protect itself if it get too hot.
 * When ACC1 is off the XMega8E5 enters an ultra low power mode drawing about 1µA. Add that to the LT3014 linear regulator's quiescent current and this board has standby current of 8µA. In bench testing my first board used 7.8µA at room temperature. Keep in mind this current is likely to double or even triple at higher temperatures but for a motorcycle or car battery this standby current is excellent.
+* JP1 must be in place for circuit to work correctly. JP1 is a good scope ground point in testing.
 * Assembling the this PCB will require a reflow oven. If you don't have one [Whizoo](http://www.whizoo.com/) sells a nice kit to make your own.
 * PCB is designed in [KiCad](http://kicad-pcb.org) which is a great free EDA toolset.
 
@@ -35,7 +37,8 @@ The microcontroller is a Atmel/Microchip XMega8E5. Software is written in C usin
 ## Protection Against the Elements
 When mounting on a motorcycle protection against the elements is crucial to longevity so the LED Relay board is thin enough to get 1" adhesive heat shrink on it. Once shrunk the board is well protected and the wires also get some strain relief.
 
-Note I used several different sizes of adhesive heat shrink to get a secure seal around the wires.
+Note I used several different sizes of adhesive heat shrink to get a watertight seal around the wires.
+<img src="meta/Heat Shrink 1.jpg" style="width:50%"><img src="meta/Heat Shrink 2.jpg" style="width:50%">
 
 ## Final Result
 Here is the obligatory end result picture!
